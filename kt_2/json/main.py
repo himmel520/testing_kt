@@ -1,17 +1,17 @@
 import json
 import logging
 
-json_path = "json/data/SuperHero.json"
-update_json_path = "json/data/update_SuperHero.json"
+JSON_PATH = "json/data/SuperHero.json"
+UPDATE_JSON_PATH = "json/data/update_SuperHero.json"
 
 
 def read_json() -> dict:
-    with open(json_path, encoding='utf-8') as f:
+    with open(JSON_PATH, encoding='utf-8') as f:
         return json.load(f)
 
 
 def create_new_json(new_data: dict) -> None:
-    with open(update_json_path, 'w', encoding='utf-8') as f:
+    with open(UPDATE_JSON_PATH, 'w', encoding='utf-8') as f:
         json.dump(new_data, f, indent=4)
 
 

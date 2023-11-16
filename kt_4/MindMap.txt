@@ -1,0 +1,6 @@
+- Dog API
+    - breed
+        - GET "https://dog.ceo/api/breeds/list/all"
+        - GET "https://dog.ceo/api/breeds/image/random"
+        - GET "https://dog.ceo/api/breed/hound/images"
+        - GET "https://dog.ceo/api/breed/hound/list"

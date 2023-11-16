@@ -1,8 +1,8 @@
 import json
 import logging
 
-from store import store_request
-from user import user_request
+from src.store import store_request
+from src.user import user_request
 
 
 BASE_URL_PETSTORE = 'https://petstore.swagger.io/v2'

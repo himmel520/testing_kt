@@ -1,17 +1,17 @@
 import csv
 import logging
 
-csv_path = "csv/data/grades.csv"
-update_csv_path = "csv/data/update_grades.csv"
+CSV_PATH = "csv/data/grades.csv"
+UPDATE_CSV_PATH = "csv/data/update_grades.csv"
 
 
 def read_csv() -> list[list]:
-    with open(csv_path, 'r', encoding='utf-8') as f:
+    with open(CSV_PATH, 'r', encoding='utf-8') as f:
         return list(csv.reader(f))[1:]
 
 
 def create_new_csv(new_rows: list[dict]) -> None:
-    with open(update_csv_path, 'w', encoding='utf-8') as f:
+    with open(UPDATE_CSV_PATH, 'w', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['full name', 'mean', 'grade'])
         writer.writeheader()
         writer.writerows(new_rows)
