@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "title": "Brother idea out.",
+      "author": "Brad Robinson",
+      "id": 2
+    },
+    {
+      "title": "Military senior.",
+      "author": "Gabriel Jones",
+      "id": 3
+    },
+    {
+      "title": "Mention help very.",
+      "author": "Frank Shah",
+      "id": 4
+    },
+    {
+      "title": "Maybe enjoy behind.",
+      "author": "Joseph Barrett",
+      "id": 5
+    },
+    {
+      "title": "Baby sort own site.",
+      "author": "Sarah Turner",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "justinoconnor"
+  }
+}
