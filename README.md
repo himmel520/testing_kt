@@ -1,17 +1,23 @@
-json-server api
+<h2>json-server api</h2>
 
-post_test.py
-GET    /posts
-GET    /posts/1
-POST   /posts
-PUT    /posts/1
-DELETE /posts/1
+<h3>post_test.py</h3>
+<ol>
+  <li>GET    /posts</li>
+  <li>GET    /posts/1</li>
+  <li>POST   /posts</li>
+  <li>PUT    /posts/1</li>
+  <li>DELETE /posts/1</li>
+</ol>
 
-profile_test.py
-GET    /profile
-POST   /profile
-PUT    /profile
+<h3>profile_test.py</h3>
+<ol>
+  <li>GET    /profile</li>
+  <li>POST   /profile</li>
+  <li>PUT    /profile</li>
+</ol>
 
-coment_test.py
-GET  /posts/1/comments
-POST /posts/1/comments
+<h3>coment_test.py</h3>
+<ol>
+  <li>GET  /posts/1/comments</li>
+  <li>POST /posts/1/comments</li>
+</ol>
