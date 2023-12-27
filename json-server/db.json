@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "title": "Well final score.",
+      "author": "David Brown",
+      "id": 2
+    },
+    {
+      "title": "Very half too light.",
+      "author": "Mark Brown",
+      "id": 3
+    },
+    {
+      "title": "Or car commercial.",
+      "author": "Amanda Flores",
+      "id": 4
+    },
+    {
+      "title": "Sport trip beyond.",
+      "author": "Kathy Davis",
+      "id": 5
+    },
+    {
+      "title": "Child hard history.",
+      "author": "Clifford Ashley",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "austinkeith"
+  }
+}

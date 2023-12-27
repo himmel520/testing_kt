@@ -1,5 +1,6 @@
 import json
 import logging
+import time
 import pytest
 import allure
 from faker import Faker
@@ -36,6 +37,7 @@ class TestComments:
         with allure.step(f"Creating a comment with body"):
             body = json.dumps({"body": body})
             res = req.post("1", "comments", body)
+            time.sleep(0.01)
 
         with allure.step("Verifying response"):
             assert res['status_code'] == 201

@@ -1,4 +1,5 @@
 import json
+import time
 import pytest
 import allure
 from faker import Faker
@@ -35,6 +36,7 @@ class TestPosts:
         with allure.step(f"Creating a post with title: {title}, author: {author}"):
             body = json.dumps({"title": title, "author": author})
             res = req.post("", "", body)
+            time.sleep(0.01)
 
         with allure.step("Verifying response"):
             assert res['status_code'] == 201
@@ -59,6 +61,7 @@ class TestPosts:
         with allure.step(f"Updating post with id: {id}, title: {title}, author: {author}"):
             body = json.dumps({"title": title, "author": author})
             res = req.put(str(id), "", body)
+            time.sleep(0.01)
 
         with allure.step("Verifying response"):
             assert res['status_code'] == 200

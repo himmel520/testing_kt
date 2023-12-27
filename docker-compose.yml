@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  client:
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    volumes:
+      - ./client:/client
+    network_mode: "host"
+    depends_on:
+      - json-server
+
+  json-server:
+    build:
+      context: .
+      dockerfile: json-server/Dockerfile
+    volumes:
+      - ./json-server:/json-server
+    ports:
+      - "3000:3000"
+    network_mode: "host"
+
